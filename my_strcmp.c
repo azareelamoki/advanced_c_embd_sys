@@ -23,6 +23,5 @@ void main(void)
     char a[] = "Bonj";
     char b[] = "Bonh";
     int diff = my_strcmp_b(a, b);
-    // int diff = 'a' - 'b';
     printf("%d\n", diff);
 }

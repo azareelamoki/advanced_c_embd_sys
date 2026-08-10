@@ -35,5 +35,4 @@ void main(void)
     char dest[10];
     char *new = my_strcpy_c(dest, "Hello Boy!");
     printf("%s\n", new);
-    // printf("%s\n", dest);
 }
