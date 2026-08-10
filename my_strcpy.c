@@ -11,7 +11,7 @@ char *my_strcpy(char *dest, const char *src)
     return start;                       //pointeur sur le premier élément de la chaine copiée
 }
 
-char *my_strcpy_s(char *dest, const char *src)
+char *my_strcpy_b(char *dest, const char *src)
 {
     char *start = dest;                 // copie de l'adresse de 'dest' dans 'start'
     while (*src) {                      //boucle d'itération conditionnée par la condition d'arrêt de la boucle.
@@ -21,7 +21,7 @@ char *my_strcpy_s(char *dest, const char *src)
     return start;                       //pointeur sur le premier élément de la chaine copiée
 }
 
-char *my_strcpy_trd(char *dest, const char *src)
+char *my_strcpy_c(char *dest, const char *src)
 {
     char *start = dest;                 // copie de l'adresse de 'dest' dans 'start'
 
@@ -33,7 +33,7 @@ char *my_strcpy_trd(char *dest, const char *src)
 void main(void)
 {
     char dest[10];
-    char *new = my_strcpy_trd(dest, "Hello Boy!");
+    char *new = my_strcpy_c(dest, "Hello Boy!");
     printf("%s\n", new);
     // printf("%s\n", dest);
 }

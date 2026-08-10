@@ -10,7 +10,7 @@ int my_strcmp(const char *a, const char *b) //approche A
     return *a - *b;
 }
 
-int my_strcmp_two(const char *a, const char *b) //approche B
+int my_strcmp_b(const char *a, const char *b) //approche B
 {
     while ((*a == *b) && *a != 0) { 
         a++; b++; 
@@ -20,9 +20,9 @@ int my_strcmp_two(const char *a, const char *b) //approche B
 
 void main(void)
 {
-    char a[] = "Chat";
-    char b[] = "Chat";
-    int diff = my_strcmp_two(a, b);
+    char a[] = "Bonj";
+    char b[] = "Bonh";
+    int diff = my_strcmp_b(a, b);
     // int diff = 'a' - 'b';
     printf("%d\n", diff);
 }
