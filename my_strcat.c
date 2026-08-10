@@ -4,7 +4,7 @@ char *my_strcpy_c(char *dest, const char *src)
 {
     char *start = dest;                 // copie de l'adresse de 'dest' dans 'start'
 
-    while ((*dest++ = *src++));         // ou  while ((*dest++ = *src++) != '\0'); boucle d'itération conditionnée par la condition d'arrêt de la boucle; Copie de chaque caractère de 'src' vers 'dest' et passage à l'élément suivant.
+    while ((*dest++ = *src++));         // où  while ((*dest++ = *src++) != '\0'); boucle d'itération conditionnée par la condition d'arrêt de la boucle; Copie de chaque caractère de 'src' vers 'dest' et passage à l'élément suivant.
     
     return start;                       //pointeur sur le premier élément de la chaine copiée
 }
