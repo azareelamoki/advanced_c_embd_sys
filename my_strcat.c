@@ -9,7 +9,7 @@ char *my_strcpy_c(char *dest, const char *src)
     return start;                       //pointeur sur le premier élément de la chaine copiée
 }
 
-char *my_strcat(char *dest, const char *src)
+char *my_strcat(char *dest, const char *src) // // Approche A
 {
     char *start = dest;                 // conservation de l'adresse du premier élément de dest dans start
 
@@ -21,7 +21,7 @@ char *my_strcat(char *dest, const char *src)
     return start;                       //retour d l'adresse initiale de la fonction
 }
 
-char *my_strcat_b(char *dest, const char *src)
+char *my_strcat_b(char *dest, const char *src) // Approche B
 {
     char *start = dest;                  // conservation de l'adresse du premier élément de dest dans start
     
