@@ -24,7 +24,7 @@ char *my_strchr_b(const char *s, int c)   // Approche B
     return ((char *)ptr);               // Dans le cas où le caractère est identique, On retourne le pointeur casté en char * pour correspondre au type de retour de la fonction (Autrement dit l'adresse de l'emplacement à laquelle a été indentifié le caractère)
 }
 
-const char *my_strchr(const char *s, int c)   // Approche A
+const char *my_strchr_c(const char *s, int c)   // Approche C
 {
     const char *ptr = s;                // copie de l'adresse contenue dans s, dans ptr.
     while (*ptr != '\0' && *ptr != c)   // La boucle s'arrête à condition que le caractère soit retrouvé dans la chaine de caractère (on utilise ptr car il detient déjà l'adresse du premier emplacement de la chaine)
@@ -39,6 +39,6 @@ const char *my_strchr(const char *s, int c)   // Approche A
 void main(void)
 {
     char s[] ="Bonjour";
-    char * test = my_strchr_b(s, 'e');
+    const char * test = my_strchr_c(s, 'e');
     (test != NULL) ? printf("%s\n", test) : printf("Character Not found !\n");
 }
