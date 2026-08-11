@@ -3,14 +3,14 @@
 
 char *my_strchr(const char *s, int c)
 {
-    char *ptr = (char *)s;              // caster le pointeur s en un type char * pour correpondre au type de retour de la fonction
-    while (*ptr != '\0' && *ptr != c)
-        ptr++;
+    char *ptr = (char *)s;              // caster le pointeur s en un type char * et copier l'adresse qu'elle contient dans ptr pour correspondre au type de retour de la fonction
+    while (*ptr != '\0' && *ptr != c)   // La boucle s'arrête à condition que le caractère soit retrouvé dans la chaine de caractère (on utilise ptr car il detient déjà l'adresse du premier emplacement de la chaine)
+        ptr++;                          // incrémentation du pointeur: passage de l'adresse actuelle à la suivante (on parle d'adresse mémoire)
    
-    if (*ptr == c)
-        return ptr;
+    if (*ptr == c)                      // À la sortie de la boucle si la valeur pointée est réellement identique au caractere recherché,
+        return ptr;                     // On retourne le pointeur (Autrement dit l'adresse de l'emplacement auquel a été indentifié le caractère)
     
-    return NULL;
+    return NULL;                        // Dans le cas où le caractère n'a pas été retrouvé le programme retourne une adresse nul.
 }
 
 void main(void)
