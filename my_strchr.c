@@ -3,20 +3,19 @@
 
 char *my_strchr(const char *s, int c)
 {
-    char *ptr = (char *)s;
+    char *ptr = (char *)s;              // caster le pointeur s en un type char * pour correpondre au type de retour de la fonction
     while (*ptr != '\0' && *ptr != c)
         ptr++;
    
-    if (*ptr != c) 
-        return NULL;
+    if (*ptr == c)
+        return ptr;
     
-    return ptr;
+    return NULL;
 }
 
 void main(void)
 {
     char s[] ="Bonjour";
-    // char * test = my_strchr(s, 'i');
-    char * test = my_strchr(s, 'o');
-    printf("%s\n", test);
+    char * test = my_strchr(s, 'e');
+    (test != NULL) ? printf("%s\n", test) : printf("Character Not found !\n");
 }
