@@ -41,6 +41,8 @@ char *my_strstr_b(const char *haystack, const char *needle) //Approche B (recomm
     const char *tmp;
     const char *tmp2;
 
+    if (my_strlen(needle) < 1) return (char *)haystack;
+
     while (*haystack != '\0' && *needle != '\0') {
         tmp = haystack;
         tmp2 = needle;
@@ -59,6 +61,6 @@ char *my_strstr_b(const char *haystack, const char *needle) //Approche B (recomm
 void main(void)
 {
     char s[] ="Bonjojour";
-    char * test = my_strstr_b(s, "jour");
+    char * test = my_strstr_b(s, "");
     (test != NULL) ? printf("%s\n", test) : printf("String Not found !\n");
 }
