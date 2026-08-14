@@ -39,6 +39,6 @@ const char *my_strchr_c(const char *s, int c)   // Approche C
 void main(void)
 {
     char s[] ="Bonjour";
-    const char * test = my_strchr_c(s, 'e');
+    const char * test = my_strchr_c(s, 'e');    // Appel de la fonction
     (test != NULL) ? printf("%s\n", test) : printf("Character Not found !\n");
 }

@@ -22,6 +22,6 @@ void main(void)
 {
     char a[] = "Bonj";
     char b[] = "Bonh";
-    int diff = my_strcmp_b(a, b);
+    int diff = my_strcmp_b(a, b);               // Appel de la fonction
     printf("%d\n", diff);
 }

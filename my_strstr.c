@@ -36,6 +36,6 @@ char *my_strstr_b(const char *haystack, const char *needle) //Approche recommand
 void main(void)
 {
     char s[] ="Bonjojour";
-    char * test = my_strstr_b(s, "");
+    char * test = my_strstr_b(s, "");                     // Appel de la fonction
     (test != NULL) ? printf("%s\n", test) : printf("String Not found !\n");
 }

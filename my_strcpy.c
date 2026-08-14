@@ -33,6 +33,6 @@ char *my_strcpy_c(char *dest, const char *src) // Approche C
 void main(void)
 {
     char dest[10];
-    char *new = my_strcpy_c(dest, "Hello Boy!");
+    char *new = my_strcpy_c(dest, "Hello Boy!"); // Appel de la fonction
     printf("%s\n", new);
 }

@@ -41,6 +41,6 @@ void main(void)
 
     char s1[20] = "Bon";
     char s2[] = "jour";
-    printf("%s\n", my_strcat_b(s1, s2));
+    printf("%s\n", my_strcat_b(s1, s2));        // Appel de la fonction dans printf
 
 }

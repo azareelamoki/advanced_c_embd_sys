@@ -52,5 +52,5 @@ void main(void)
     const char *s = "a";
     char s1[] = "Bonjour";
 
-    printf("%ld\n%ld\n", my_strlen_b(s), my_strlen_c(s1));
+    printf("%ld\n%ld\n", my_strlen_b(s), my_strlen_c(s1));  // Appel de la fonction dans printf
 }
