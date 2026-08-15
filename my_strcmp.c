@@ -2,10 +2,10 @@
 
 int my_strcmp(const char *a, const char *b) //approche A
 {
-    while(*a) {
-        if (*a != *b)
+    while(*a != '\0') {                             // Tant que le caractère actuel de la première chaine est différent du caractère nul la boucle continue son fonctionnement
+        if (*a != *b)                               // Dès que les caractères actuels de la première et de la deuxième chaine sont identique, le programme exécutela fontion "break" synonyme d'arrêt
             break;
-        a++; b++;
+        a++; b++;                                   // Tant que les caractères actuels de la première et de la deuxième chaine ne sont pas identiques le programme passe au carctères suivants des chaines respective
     }
     return *a - *b;
 }

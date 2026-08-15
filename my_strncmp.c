@@ -19,15 +19,15 @@ int my_strncmp(const char *a, const char *b, size_t n)
 
 int my_strncmp_b(const char *a, const char *b, size_t n)    // Approche B
 {
-    size_t i = 0;
+    size_t i = 0;                                           // initialisation d'un index (i) du même type que n (size_t) pour parcourir la boucle
 
-    while (i < n && *a == *b && *a != '\0') {
-        a++;
-        b++;
-        i++;
+    while (i < n && *a == *b && *a != '\0') {               // La boucle ne s'arrête pas tant que i est inférieur à n et que les caractère de a et b sont identiques avec a != du caractère nul.
+        a++;                                                // passage du caractère actuel au caractère suivant en incrémentant a(en memoire il y a passage d'une adresse à une autre)
+        b++;                                                // passage du caractère actuel au caractère suivant en incrémentant b
+        i++;                                                // incrémentation de l'index i permettant respecter la marge de caractère à comparer.
     }
 
-    if (i == n)
+    if (i == n)                                             // à la sortie de la boucle si i est egale à n alors 
         return 0;
 
     return *a - *b;
