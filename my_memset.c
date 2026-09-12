@@ -12,14 +12,3 @@ void * my_memset(void *s, int c, size_t n) // Cette fonction à pour but d'écri
 
     return s;
 }
-
-// int main(void)
-// {
-//     char buffer[10] = "abcdefghi";
-
-//     my_memset(buffer, 'X', 4);
-
-//     printf("%s\n", buffer);
-
-//     return 0;
-// }
